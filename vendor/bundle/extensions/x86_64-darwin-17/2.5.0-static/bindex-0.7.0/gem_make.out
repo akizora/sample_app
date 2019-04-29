@@ -1,0 +1,15 @@
+current directory: /Users/akiyamadaiki/environment/sample_app/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+/Users/akiyamadaiki/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20190429-16508-1p7rqu6.rb extconf.rb
+creating Makefile
+
+current directory: /Users/akiyamadaiki/environment/sample_app/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/akiyamadaiki/environment/sample_app/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /Users/akiyamadaiki/environment/sample_app/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190429-16508-nwfswy/skiptrace
