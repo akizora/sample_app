@@ -5,6 +5,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:michael)
     @non_admin = users(:archer)
+    # @non_activated = users(:non_activated)
   end
 
   test "index including pagination" do
@@ -39,4 +40,13 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     get users_path
     assert_select 'a', text: 'delete', count: 0
   end
+ 
+  # test "should not show non-activated user" do
+  #   log_in_as(@admin)
+  #   get users_path
+  #   assert_select 'a[href=?]', user_path(@non_activated), count: 0
+
+  #   get user_path(@non_activated)
+  #   assert_redirected_to root_url
+  # end
 end
